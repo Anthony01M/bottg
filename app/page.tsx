@@ -1,5 +1,5 @@
-import  ExampleProfileRu  from "@/components/example-profile-ru"
+import { Profile } from "@/components/Profile";
 
 export default function Page() {
-  return <ExampleProfileRu />
+	return <Profile />
 }
