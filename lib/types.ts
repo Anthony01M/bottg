@@ -44,3 +44,23 @@ interface NFTItemType {
 	category?: string;
 	creator?: string;
 }
+
+type GeneratorMode = 'text2img' | 'img2img' | 'upscale';
+
+type Model = {
+	id: string;
+	name: string;
+	price?: number;
+	isFree?: boolean;
+};
+
+type GeneratorSettings = {
+	prompt: string;
+	negativePrompt: string;
+	model: string;
+	samplerSteps: number;
+	imageCount: number;
+	size: string;
+	denoiseStrength?: number;
+	upscaleFactor?: '2x' | '4x';
+};
