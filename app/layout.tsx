@@ -34,7 +34,7 @@ export default function RootLayout({
 					<ThemeProvider>
 						<LanguageProvider>
 							<div className="min-h-screen">
-								<div className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</div>
+								<div className={`${geistSans.variable} ${geistMono.variable} antialiased pb-24`}>{children}</div>
 								<MobileNav />
 							</div>
 						</LanguageProvider>
